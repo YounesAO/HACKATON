@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="  SofiaSansSemiCondensed-VariableFont_wght.ttf" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="/lader.png" alt="Logo">
+      </div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id ="home" class="main-section">
+    <div class="container">
+      <h2>Welcome to our Startup Company</h2>
+      <p>We provide local desktops and digitalization services for startups.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <section id ="services" class="services-section">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="card-wrapper">
+        <div class="card">
+          <img src="/smartOffice1.png" alt="Service 1">
+          <h3>Local Desktops</h3>
+          <p>We provide top-of-the-line desktops for your startup's needs.</p>
+        </div>
+        <div class="card">
+          <img src="/digitalization.png" alt="Service 2">
+          <h3>Digitalization Services</h3>
+          <p>We can help you transition to digital services and optimize your workflow.</p>
+        </div>
+        <div class="card">
+          <img src="/support.png" alt="Service 3">
+          <h3>Startup Monitoring</h3>
+          <p>We offer guidance and support to help your startup succeed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about-us" class="about-main-section">
+    <div class="about-container">
+      <h2>About Us</h2>
+      <div class="about-row">
+        <div class="about-col">
+          <img src="/lader.png" alt="About Us Image">
+        </div>
+        <div class="about-col">
+          <h3>Our Story</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget velit mollis, fringilla leo sed, aliquam nisl. Donec feugiat augue eget felis iaculis, sit amet varius mauris aliquet. Nullam porttitor augue vel odio vulputate, at malesuada elit fermentum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget velit mollis, fringilla leo sed, aliquam nisl.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Fill out the form below to submit a service request.</p>
+      <form action="submit-form.php" method="POST">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="service">Service Requested:</label>
+          <input type="text" id="service" name="service" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Submit Request</button>
+      </form>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="footer-container">
+      <div class="column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Whitepapers</a></li>
+          <li><a href="#">Case Studies</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Connect With Us</h4>
+        <ul class="social-icons">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  
+  
+    <script>
+    const navLinks = document.querySelectorAll('nav ul li a');
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          const target = document.querySelector(link.getAttribute('href'));
+          target.scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });</script>
+  
+</body>
+</html>
